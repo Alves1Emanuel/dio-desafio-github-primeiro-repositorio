@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamento - aling item</title>
+    <style>
+        .contanier{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: forestgreen;
+            margin: 5px;
+            color: whitesmoke;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .flex{
+            flex: 1;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h1>Center</h1>
+    <section class="contanier center">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>stretch</h1>
+    <section class="contanier stretch ">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>flex-start</h1>
+    <section class="contanier flex-start ">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>flex-end</h1>
+    <section class="contanier flex-end ">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>baseline</h1>
+    <section class="contanier flex-end baseline ">
+        <div class="item"><br> 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>Column</h1>
+    <h1>Center</h1>
+    <section class="contanier center column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>stretch</h1>
+    <section class="contanier stretch column ">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>flex-start</h1>
+    <section class="contanier flex-start column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>flex-end</h1>
+    <section class="contanier flex-end column">
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <h1>baseline</h1>
+    <section class="contanier flex-end baseline column">
+        <div class="item"><br> 1</div>
+        <div class="item">Lorem ipsum dolor sit</div>
+        <div class="item">Item 3</div>
+    </section>
+    <section class="contanier center central">
+        <div class="item">Lorem ipsum dolor sit amet ?</div>
+    </section>
+</body>
+</html>
